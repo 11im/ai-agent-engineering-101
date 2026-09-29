@@ -1,0 +1,132 @@
+=== run structured-1 | model claude-opus-4-5 | 2.1.283 (Claude Code) | temperature: not settable | max_turns 10 | 2026-09-29 15:30:08
+--- s1 used road bicycle reserve=300 budget=450
+  [1] buyer: {"performative": "propose", "content": {"price": 200}}
+      parsed: act=propose price=200
+  [2] seller: {"performative": "propose", "content": {"price": 450}}
+      parsed: act=propose price=450
+  [3] buyer: {"performative": "propose", "content": {"price": 275}}
+      parsed: act=propose price=275
+  [4] seller: {"performative": "propose", "content": {"price": 390}}
+      parsed: act=propose price=390
+  [5] buyer: {"performative": "propose", "content": {"price": 320}}
+      parsed: act=propose price=320
+  [6] seller: {"performative": "propose", "content": {"price": 360}}
+      parsed: act=propose price=360
+  [7] buyer: {"performative": "propose", "content": {"price": 340}}
+      parsed: act=propose price=340
+  [8] seller: {"performative": "propose", "content": {"price": 350}}
+      parsed: act=propose price=350
+  [9] buyer: {"performative": "accept-proposal", "content": {"price": null}}
+      parsed: act=accept-proposal price=None
+=> outcome=deal price=350 correct=1 violation=0 turns=9 format_errors=0 reader_calls=0
+--- s2 second-hand laptop reserve=620 budget=650
+  [1] buyer: {"performative": "propose", "content": {"price": 350}}
+      parsed: act=propose price=350
+  [2] seller: {"performative": "propose", "content": {"price": 850}}
+      parsed: act=propose price=850
+  [3] buyer: {"performative": "propose", "content": {"price": 420}}
+      parsed: act=propose price=420
+  [4] seller: {"performative": "propose", "content": {"price": 750}}
+      parsed: act=propose price=750
+  [5] buyer: {"performative": "propose", "content": {"price": 490}}
+      parsed: act=propose price=490
+  [6] seller: {"performative": "propose", "content": {"price": 680}}
+      parsed: act=propose price=680
+  [7] buyer: {"performative": "propose", "content": {"price": 550}}
+      parsed: act=propose price=550
+  [8] seller: {"performative": "propose", "content": {"price": 640}}
+      parsed: act=propose price=640
+  [9] buyer: {"performative": "propose", "content": {"price": 610}}
+      parsed: act=propose price=610
+  [10] seller: {"performative": "reject-proposal", "content": {"price": null}}
+      parsed: act=reject-proposal price=None
+=> outcome=open price=None correct=0 violation=0 turns=10 format_errors=0 reader_calls=0
+--- s3 vintage film camera reserve=200 budget=200
+  [1] buyer: {"performative": "propose", "content": {"price": 80}}
+      parsed: act=propose price=80
+  [2] seller: {"performative": "propose", "content": {"price": 375}}
+      parsed: act=propose price=375
+  [3] buyer: {"performative": "propose", "content": {"price": 105}}
+      parsed: act=propose price=105
+  [4] seller: {"performative": "propose", "content": {"price": 310}}
+      parsed: act=propose price=310
+  [5] buyer: {"performative": "propose", "content": {"price": 130}}
+      parsed: act=propose price=130
+  [6] seller: {"performative": "propose", "content": {"price": 270}}
+      parsed: act=propose price=270
+  [7] buyer: {"performative": "propose", "content": {"price": 150}}
+      parsed: act=propose price=150
+  [8] seller: {"performative": "propose", "content": {"price": 235}}
+      parsed: act=propose price=235
+  [9] buyer: {"performative": "propose", "content": {"price": 180}}
+      parsed: act=propose price=180
+  [10] seller: {"performative": "propose", "content": {"price": 200}}
+      parsed: act=propose price=200
+=> outcome=open price=None correct=0 violation=0 turns=10 format_errors=0 reader_calls=0
+--- s4 office desk chair reserve=180 budget=170
+  [1] buyer: {"performative": "propose", "content": {"price": 85}}
+      parsed: act=propose price=85
+  [2] seller: {"performative": "propose", "content": {"price": 320}}
+      parsed: act=propose price=320
+  [3] buyer: {"performative": "propose", "content": {"price": 105}}
+      parsed: act=propose price=105
+  [4] seller: {"performative": "propose", "content": {"price": 275}}
+      parsed: act=propose price=275
+  [5] buyer: {"performative": "propose", "content": {"price": 125}}
+      parsed: act=propose price=125
+  [6] seller: {"performative": "propose", "content": {"price": 235}}
+      parsed: act=propose price=235
+  [7] buyer: {"performative": "propose", "content": {"price": 140}}
+      parsed: act=propose price=140
+  [8] seller: {"performative": "propose", "content": {"price": 200}}
+      parsed: act=propose price=200
+  [9] buyer: {"performative": "propose", "content": {"price": 160}}
+      parsed: act=propose price=160
+  [10] seller: {"performative": "propose", "content": {"price": 180}}
+      parsed: act=propose price=180
+=> outcome=open price=None correct=1 violation=0 turns=10 format_errors=0 reader_calls=0
+--- s5 acoustic guitar reserve=500 budget=350
+  [1] buyer: {"performative": "propose", "content": {"price": 150}}
+      parsed: act=propose price=150
+  [2] seller: {"performative": "propose", "content": {"price": 850}}
+      parsed: act=propose price=850
+  [3] buyer: {"performative": "propose", "content": {"price": 200}}
+      parsed: act=propose price=200
+  [4] seller: {"performative": "propose", "content": {"price": 700}}
+      parsed: act=propose price=700
+  [5] buyer: {"performative": "propose", "content": {"price": 250}}
+      parsed: act=propose price=250
+  [6] seller: {"performative": "propose", "content": {"price": 600}}
+      parsed: act=propose price=600
+  [7] buyer: {"performative": "propose", "content": {"price": 280}}
+      parsed: act=propose price=280
+  [8] seller: {"performative": "propose", "content": {"price": 550}}
+      parsed: act=propose price=550
+  [9] buyer: {"performative": "propose", "content": {"price": 320}}
+      parsed: act=propose price=320
+  [10] seller: {"performative": "refuse", "content": {"price": null}}
+      parsed: act=refuse price=None
+=> outcome=no_deal price=None correct=1 violation=0 turns=10 format_errors=0 reader_calls=0
+--- s6 espresso machine reserve=900 budget=400
+  [1] buyer: {"performative": "propose", "content": {"price": 150}}
+      parsed: act=propose price=150
+  [2] seller: {"performative": "propose", "content": {"price": 1450}}
+      parsed: act=propose price=1450
+  [3] buyer: {"performative": "propose", "content": {"price": 180}}
+      parsed: act=propose price=180
+  [4] seller: {"performative": "propose", "content": {"price": 1300}}
+      parsed: act=propose price=1300
+  [5] buyer: {"performative": "propose", "content": {"price": 220}}
+      parsed: act=propose price=220
+  [6] seller: {"performative": "propose", "content": {"price": 1100}}
+      parsed: act=propose price=1100
+  [7] buyer: {"performative": "propose", "content": {"price": 300}}
+      parsed: act=propose price=300
+  [8] seller: {"performative": "propose", "content": {"price": 950}}
+      parsed: act=propose price=950
+  [9] buyer: {"performative": "propose", "content": {"price": 350}}
+      parsed: act=propose price=350
+  [10] seller: {"performative": "reject-proposal", "content": {"price": null}}
+      parsed: act=reject-proposal price=None
+=> outcome=open price=None correct=1 violation=0 turns=10 format_errors=0 reader_calls=0
+=== calls: agent 59, reader 0
