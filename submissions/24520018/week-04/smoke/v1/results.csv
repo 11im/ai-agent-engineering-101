@@ -1,0 +1,6 @@
+run,condition,scenario,deal_possible,outcome,price,correct,violation,turns,format_errors,reader_calls,note
+free-0,free,s1,1,deal,390,1,0,6,0,6,
+run,condition,scenario,deal_possible,outcome,price,correct,violation,turns,format_errors,reader_calls,note
+tagged-0,tagged,s1,1,deal,390,1,0,7,0,5,
+run,condition,scenario,deal_possible,outcome,price,correct,violation,turns,format_errors,reader_calls,note
+structured-0,structured,s1,1,open,,0,0,10,10,0,

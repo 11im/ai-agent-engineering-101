@@ -1,0 +1,44 @@
+=== run structured-0 | model claude-haiku-4-5 | 2.1.283 (Claude Code) | temperature: not settable | max_turns 10 | 2026-09-29 13:12:48
+--- s1 used road bicycle reserve=300 budget=450
+  [1] buyer: ```json
+{"performative": "propose", "content": {"price": 350}}
+```
+      parsed: act=None price=None ERROR=not a JSON object: Expecting value
+  [2] seller: ```json
+{"performative": "propose", "content": {"price": 450}}
+```
+      parsed: act=None price=None ERROR=not a JSON object: Expecting value
+  [3] buyer: ```json
+{"performative": "reject-proposal", "content": {"price": 380}}
+```
+      parsed: act=None price=None ERROR=not a JSON object: Expecting value
+  [4] seller: ```json
+{"performative": "propose", "content": {"price": 415}}
+```
+      parsed: act=None price=None ERROR=not a JSON object: Expecting value
+  [5] buyer: ```json
+{"performative": "propose", "content": {"price": 395}}
+```
+      parsed: act=None price=None ERROR=not a JSON object: Expecting value
+  [6] seller: ```json
+{"performative": "propose", "content": {"price": 405}}
+```
+      parsed: act=None price=None ERROR=not a JSON object: Expecting value
+  [7] buyer: ```json
+{"performative": "propose", "content": {"price": 400}}
+```
+      parsed: act=None price=None ERROR=not a JSON object: Expecting value
+  [8] seller: ```json
+{"performative": "accept-proposal", "content": {"price": null}}
+```
+      parsed: act=None price=None ERROR=not a JSON object: Expecting value
+  [9] buyer: ```json
+{"performative": "accept-proposal", "content": {"price": null}}
+```
+      parsed: act=None price=None ERROR=not a JSON object: Expecting value
+  [10] seller: ```json
+{"performative": "accept-proposal", "content": {"price": null}}
+```
+      parsed: act=None price=None ERROR=not a JSON object: Expecting value
+=> outcome=open price=None correct=0 violation=0 turns=10 format_errors=10 reader_calls=0
+=== calls: agent 10, reader 0
