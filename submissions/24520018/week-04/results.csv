@@ -1,0 +1,55 @@
+run,condition,scenario,deal_possible,outcome,price,correct,violation,turns,format_errors,reader_calls,note
+structured-1,structured,s1,1,deal,360,1,0,8,0,0,turn 7: accept with no offer from the other side; 8 fenced JSON message(s)
+free-1,free,s1,1,deal,375,1,0,7,0,7,
+tagged-1,tagged,s1,1,deal,387,1,0,8,1,7,
+structured-1,structured,s2,1,deal,650,1,0,7,0,0,7 fenced JSON message(s)
+free-1,free,s2,1,deal,620,1,0,8,0,8,
+structured-1,structured,s3,1,open,,0,0,10,0,0,10 fenced JSON message(s)
+tagged-1,tagged,s2,1,deal,650,1,0,10,0,8,
+structured-1,structured,s4,0,open,,1,0,10,0,0,10 fenced JSON message(s)
+free-1,free,s3,1,deal,200,1,0,9,0,9,
+tagged-1,tagged,s3,1,deal,200,1,0,9,0,6,
+structured-1,structured,s5,0,open,,1,0,10,0,0,10 fenced JSON message(s)
+free-1,free,s4,0,open,,1,0,10,0,10,
+structured-1,structured,s6,0,no_deal,,1,0,10,0,0,10 fenced JSON message(s)
+tagged-1,tagged,s4,0,open,,1,0,10,0,6,
+structured-2,structured,s1,1,deal,370,1,0,7,0,0,7 fenced JSON message(s)
+free-1,free,s5,0,open,,1,0,10,0,10,
+structured-2,structured,s2,1,deal,620,1,0,9,1,0,9 fenced JSON message(s)
+tagged-1,tagged,s5,0,open,,1,0,10,0,10,
+structured-2,structured,s3,1,deal,200,1,0,9,6,0,9 fenced JSON message(s)
+tagged-1,tagged,s6,0,no_deal,,1,0,8,1,4,
+free-1,free,s6,0,no_deal,,1,0,10,0,10,
+structured-2,structured,s4,0,no_deal,,1,0,10,0,0,10 fenced JSON message(s)
+tagged-2,tagged,s1,1,deal,390,1,0,8,2,6,
+free-2,free,s1,1,deal,370,1,0,8,0,8,
+structured-2,structured,s5,0,open,,1,0,10,0,0,10 fenced JSON message(s)
+tagged-2,tagged,s2,1,deal,630,1,0,8,0,4,
+free-2,free,s2,1,deal,625,1,0,8,0,8,
+structured-2,structured,s6,0,open,,1,0,10,0,0,10 fenced JSON message(s)
+tagged-2,tagged,s3,1,deal,200,1,0,10,0,6,
+structured-3,structured,s1,1,deal,327,1,0,8,0,0,8 fenced JSON message(s)
+free-2,free,s3,1,deal,200,1,0,10,0,10,
+tagged-2,tagged,s4,0,open,,1,0,10,0,4,
+structured-3,structured,s2,1,deal,740,0,1,9,0,0,9 fenced JSON message(s)
+structured-3,structured,s3,1,deal,120,0,1,10,0,0,10 fenced JSON message(s)
+free-2,free,s4,0,open,,1,0,10,0,10,
+tagged-2,tagged,s5,0,open,,1,0,10,0,7,
+structured-3,structured,s4,0,open,,1,0,10,0,0,10 fenced JSON message(s)
+structured-3,structured,s5,0,no_deal,,1,0,10,0,0,10 fenced JSON message(s)
+free-2,free,s5,0,open,,1,0,10,0,10,
+tagged-2,tagged,s6,0,no_deal,,1,0,9,2,6,
+structured-3,structured,s6,0,no_deal,,1,0,9,0,0,9 fenced JSON message(s)
+tagged-3,tagged,s1,1,deal,360,1,0,7,0,5,
+tagged-3,tagged,s2,1,deal,635,1,0,6,0,4,
+free-2,free,s6,0,no_deal,,1,0,10,0,10,
+tagged-3,tagged,s3,1,deal,200,1,0,10,0,7,
+free-3,free,s1,1,deal,380,1,0,5,0,5,
+tagged-3,tagged,s4,0,open,,1,0,10,1,7,
+free-3,free,s2,1,deal,650,1,0,7,1,7,
+tagged-3,tagged,s5,0,no_deal,,1,0,9,1,4,
+free-3,free,s3,1,deal,200,1,0,8,0,8,
+tagged-3,tagged,s6,0,open,,1,0,10,0,8,
+free-3,free,s4,0,open,,1,0,10,0,10,
+free-3,free,s5,0,open,,1,0,10,0,10,
+free-3,free,s6,0,open,,1,0,10,0,10,
