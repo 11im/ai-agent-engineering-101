@@ -8,6 +8,7 @@ ACTS = ("propose", "accept-proposal", "reject-proposal", "refuse")
 MAX_TURNS = 10
 
 TAG_RE = re.compile(r"\((propose|accept-proposal|reject-proposal|refuse)\)")
+FENCE_RE = re.compile(r"\A```(?:json)?\s*\n(.*)\n```\Z", re.DOTALL)
 
 
 def result(performative=None, price=None, reader_calls=0, error=None, raw=None) -> dict:
@@ -61,6 +62,17 @@ def parse_tagged(text: str, speaker: str, reader) -> dict:
 
 
 def parse_structured(text: str, speaker: str = "", reader=None) -> dict:
+    # Haiku wraps the object in a ```json fence despite the format paragraph
+    # (smoke/v1). One outer fence is stripped; the run notes how often.
+    fenced = FENCE_RE.match(text.strip())
+    if fenced:
+        text = fenced.group(1)
+    r = _parse_json_message(text)
+    r["fenced"] = bool(fenced)
+    return r
+
+
+def _parse_json_message(text: str) -> dict:
     try:
         msg = json.loads(text)
     except json.JSONDecodeError as e:

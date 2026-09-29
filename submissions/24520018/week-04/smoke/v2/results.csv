@@ -1,0 +1,2 @@
+run,condition,scenario,deal_possible,outcome,price,correct,violation,turns,format_errors,reader_calls,note
+structured-0,structured,s1,1,deal,337,1,0,9,0,0,9 fenced JSON message(s)

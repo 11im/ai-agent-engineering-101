@@ -54,6 +54,9 @@ def episode(model: Model, condition: str, sc: dict, log) -> dict:
         history.append({"turn": turn, "speaker": speaker, "text": text, "parsed": parsed})
         if state != "continue":
             break
+    fenced = sum(1 for h in history if h["parsed"].get("fenced"))
+    if fenced:
+        notes.append(f"{fenced} fenced JSON message(s)")
     return {"outcome": state, "price": price, "turns": len(history),
             "format_errors": sum(1 for h in history if h["parsed"]["error"]),
             "reader_calls": sum(h["parsed"]["reader_calls"] for h in history),
@@ -103,10 +106,10 @@ def main():
     log(f"=== run {run_id} | model {args.model} | {cli_version()} | temperature: not settable "
         f"| max_turns {MAX_TURNS} | {time.strftime('%Y-%m-%d %H:%M:%S')}")
 
-    new_file = not out.exists()
+    # Run one process per results file at a time: parallel runs race on the header.
     with out.open("a", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        if new_file:
+        if f.tell() == 0:
             w.writerow(HEADER)
         for sc in scenarios:
             if (run_id, str(sc["id"])) in done:

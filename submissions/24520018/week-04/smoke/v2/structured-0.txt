@@ -1,0 +1,40 @@
+=== run structured-0 | model claude-haiku-4-5 | 2.1.283 (Claude Code) | temperature: not settable | max_turns 10 | 2026-09-29 13:15:25
+--- s1 used road bicycle reserve=300 budget=450
+  [1] buyer: ```json
+{"performative": "propose", "content": {"price": 320}}
+```
+      parsed: act=propose price=320
+  [2] seller: ```json
+{"performative": "propose", "content": {"price": 350}}
+```
+      parsed: act=propose price=350
+  [3] buyer: ```json
+{"performative": "propose", "content": {"price": 330}}
+```
+      parsed: act=propose price=330
+  [4] seller: ```json
+{"performative": "propose", "content": {"price": 340}}
+```
+      parsed: act=propose price=340
+  [5] buyer: ```json
+{"performative": "propose", "content": {"price": 335}}
+```
+      parsed: act=propose price=335
+  [6] seller: ```json
+{"performative": "propose", "content": {"price": 338}}
+```
+      parsed: act=propose price=338
+  [7] buyer: ```json
+{"performative": "propose", "content": {"price": 336}}
+```
+      parsed: act=propose price=336
+  [8] seller: ```json
+{"performative": "propose", "content": {"price": 337}}
+```
+      parsed: act=propose price=337
+  [9] buyer: ```json
+{"performative": "accept-proposal", "content": {"price": null}}
+```
+      parsed: act=accept-proposal price=None
+=> outcome=deal price=337 correct=1 violation=0 turns=9 format_errors=0 reader_calls=0
+=== calls: agent 9, reader 0
