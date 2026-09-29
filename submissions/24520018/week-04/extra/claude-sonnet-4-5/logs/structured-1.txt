@@ -1,0 +1,202 @@
+=== run structured-1 | model claude-sonnet-4-5 | 2.1.283 (Claude Code) | temperature: not settable | max_turns 10 | 2026-09-29 14:19:29
+--- s1 used road bicycle reserve=300 budget=450
+  [1] buyer: {"performative": "propose", "content": {"price": 250}}
+      parsed: act=propose price=250
+  [2] seller: {"performative": "propose", "content": {"price": 475}}
+      parsed: act=propose price=475
+  [3] buyer: {"performative": "propose", "content": {"price": 320}}
+      parsed: act=propose price=320
+  [4] seller: {"performative": "propose", "content": {"price": 390}}
+      parsed: act=propose price=390
+  [5] buyer: {"performative": "propose", "content": {"price": 350}}
+      parsed: act=propose price=350
+  [6] seller: {"performative": "propose", "content": {"price": 370}}
+      parsed: act=propose price=370
+  [7] buyer: {"performative": "propose", "content": {"price": 360}}
+      parsed: act=propose price=360
+  [8] seller: {"performative": "propose", "content": {"price": 365}}
+      parsed: act=propose price=365
+  [9] buyer: {"performative": "accept-proposal", "content": {"price": null}}
+      parsed: act=accept-proposal price=None
+=> outcome=deal price=365 correct=1 violation=0 turns=9 format_errors=0 reader_calls=0
+--- s2 second-hand laptop reserve=620 budget=650
+  [1] buyer: ```json
+{"performative": "propose", "content": {"price": 400}}
+```
+      parsed: act=propose price=400
+  [2] seller: ```json
+{"performative": "propose", "content": {"price": 850}}
+```
+      parsed: act=propose price=850
+  [3] buyer: ```json
+{"performative": "propose", "content": {"price": 500}}
+```
+      parsed: act=propose price=500
+  [4] seller: ```json
+{"performative": "propose", "content": {"price": 750}}
+```
+      parsed: act=propose price=750
+  [5] buyer: ```json
+{"performative": "propose", "content": {"price": 550}}
+```
+      parsed: act=propose price=550
+  [6] seller: ```json
+{"performative": "propose", "content": {"price": 650}}
+```
+      parsed: act=propose price=650
+  [7] buyer: ```json
+{"performative": "propose", "content": {"price": 600}}
+```
+      parsed: act=propose price=600
+  [8] seller: ```json
+{"performative": "propose", "content": {"price": 625}}
+```
+      parsed: act=propose price=625
+  [9] buyer: ```json
+{"performative": "accept-proposal", "content": {"price": null}}
+```
+      parsed: act=accept-proposal price=None
+=> outcome=deal price=625 correct=1 violation=0 turns=9 format_errors=0 reader_calls=0
+--- s3 vintage film camera reserve=200 budget=200
+  [1] buyer: {"performative": "propose", "content": {"price": 100}}
+      parsed: act=propose price=100
+  [2] seller: {"performative": "propose", "content": {"price": 380}}
+      parsed: act=propose price=380
+  [3] buyer: {"performative": "propose", "content": {"price": 130}}
+      parsed: act=propose price=130
+  [4] seller: {"performative": "propose", "content": {"price": 310}}
+      parsed: act=propose price=310
+  [5] buyer: {"performative": "propose", "content": {"price": 160}}
+      parsed: act=propose price=160
+=== run structured-1 | model claude-sonnet-4-5 | 2.1.283 (Claude Code) | temperature: not settable | max_turns 10 | 2026-09-29 14:25:58
+--- s1: already in results.csv, skipped
+--- s2: already in results.csv, skipped
+--- s3 vintage film camera reserve=200 budget=200
+  [1] buyer: {"performative": "propose", "content": {"price": 100}}
+      parsed: act=propose price=100
+  [2] seller: {"performative": "propose", "content": {"price": 375}}
+      parsed: act=propose price=375
+  [3] buyer: {"performative": "propose", "content": {"price": 120}}
+      parsed: act=propose price=120
+  [4] seller: {"performative": "propose", "content": {"price": 310}}
+      parsed: act=propose price=310
+  [5] buyer: {"performative": "propose", "content": {"price": 150}}
+      parsed: act=propose price=150
+  [6] seller: {"performative": "propose", "content": {"price": 265}}
+      parsed: act=propose price=265
+  [7] buyer: {"performative": "propose", "content": {"price": 175}}
+      parsed: act=propose price=175
+  [8] seller: {"performative": "propose", "content": {"price": 230}}
+      parsed: act=propose price=230
+  [9] buyer: {"performative": "propose", "content": {"price": 190}}
+      parsed: act=propose price=190
+  [10] seller: {"performative": "propose", "content": {"price": 200}}
+      parsed: act=propose price=200
+=> outcome=open price=None correct=0 violation=0 turns=10 format_errors=0 reader_calls=0
+--- s4 office desk chair reserve=180 budget=170
+  [1] buyer: ```json
+{"performative": "propose", "content": {"price": 100}}
+```
+      parsed: act=propose price=100
+  [2] seller: ```json
+{"performative": "propose", "content": {"price": 260}}
+```
+      parsed: act=propose price=260
+  [3] buyer: ```json
+{"performative": "propose", "content": {"price": 120}}
+```
+      parsed: act=propose price=120
+  [4] seller: ```json
+{"performative": "propose", "content": {"price": 230}}
+```
+      parsed: act=propose price=230
+  [5] buyer: ```json
+{"performative": "propose", "content": {"price": 145}}
+```
+      parsed: act=propose price=145
+  [6] seller: ```json
+{"performative": "propose", "content": {"price": 210}}
+```
+      parsed: act=propose price=210
+  [7] buyer: ```json
+{"performative": "propose", "content": {"price": 160}}
+```
+      parsed: act=propose price=160
+  [8] seller: ```json
+{"performative": "propose", "content": {"price": 190}}
+```
+      parsed: act=propose price=190
+  [9] buyer: ```json
+{"performative": "propose", "content": {"price": 170}}
+```
+      parsed: act=propose price=170
+  [10] seller: ```json
+{"performative": "propose", "content": {"price": 180}}
+```
+      parsed: act=propose price=180
+=> outcome=open price=None correct=1 violation=0 turns=10 format_errors=0 reader_calls=0
+--- s5 acoustic guitar reserve=500 budget=350
+  [1] buyer: {"performative": "propose", "content": {"price": 200}}
+      parsed: act=propose price=200
+  [2] seller: {"performative": "propose", "content": {"price": 850}}
+      parsed: act=propose price=850
+  [3] buyer: {"performative": "propose", "content": {"price": 250}}
+      parsed: act=propose price=250
+  [4] seller: {"performative": "propose", "content": {"price": 700}}
+      parsed: act=propose price=700
+  [5] buyer: {"performative": "propose", "content": {"price": 280}}
+      parsed: act=propose price=280
+  [6] seller: {"performative": "propose", "content": {"price": 650}}
+      parsed: act=propose price=650
+  [7] buyer: {"performative": "propose", "content": {"price": 320}}
+      parsed: act=propose price=320
+  [8] seller: {"performative": "propose", "content": {"price": 575}}
+      parsed: act=propose price=575
+  [9] buyer: {"performative": "propose", "content": {"price": 340}}
+      parsed: act=propose price=340
+  [10] seller: {"performative": "refuse", "content": {"price": null}}
+      parsed: act=refuse price=None
+=> outcome=no_deal price=None correct=1 violation=0 turns=10 format_errors=0 reader_calls=0
+--- s6 espresso machine reserve=900 budget=400
+  [1] buyer: ```json
+{"performative": "propose", "content": {"price": 250}}
+```
+      parsed: act=propose price=250
+  [2] seller: ```json
+{"performative": "propose", "content": {"price": 1250}}
+```
+      parsed: act=propose price=1250
+  [3] buyer: ```json
+{"performative": "propose", "content": {"price": 300}}
+```
+      parsed: act=propose price=300
+  [4] seller: ```json
+{"performative": "propose", "content": {"price": 1050}}
+```
+      parsed: act=propose price=1050
+  [5] buyer: ```json
+{"performative": "propose", "content": {"price": 350}}
+```
+      parsed: act=propose price=350
+  [6] seller: ```json
+{"performative": "propose", "content": {"price": 975}}
+```
+      parsed: act=propose price=975
+  [7] buyer: ```json
+{"performative": "propose", "content": {"price": 375}}
+```
+      parsed: act=propose price=375
+  [8] seller: ```json
+{"performative": "propose", "content": {"price": 925}}
+```
+      parsed: act=propose price=925
+  [9] buyer: ```json
+{"performative": "propose", "content": {"price": 390}}
+```
+      parsed: act=propose price=390
+  [10] seller: ```json
+{"performative": "propose", "content": {"price": 900}}
+```
+      parsed: act=propose price=900
+=> outcome=open price=None correct=1 violation=0 turns=10 format_errors=0 reader_calls=0
+=== calls: agent 40, reader 0
