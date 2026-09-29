@@ -1,0 +1,8 @@
+[
+  {"id": "s1", "item": "used road bicycle", "reserve": 300, "budget": 450},
+  {"id": "s2", "item": "second-hand laptop", "reserve": 620, "budget": 650},
+  {"id": "s3", "item": "vintage film camera", "reserve": 200, "budget": 200},
+  {"id": "s4", "item": "office desk chair", "reserve": 180, "budget": 170},
+  {"id": "s5", "item": "acoustic guitar", "reserve": 500, "budget": 350},
+  {"id": "s6", "item": "espresso machine", "reserve": 900, "budget": 400}
+]
